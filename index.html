@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Mercadin 1000 grau</title>
+    <link rel="apple-touch-icon" href="images/pwa-icon-256.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/db.js"></script>
+    <!--viewport para designers responsivos (mobo), content é a configuração-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="white" />
+</head>
+
+<body>
+    
+    <nav class="container">
+        <a href="/">Home</a>
+        <a href="/html/massas">Massas</a>
+        <a href="/html/doces">Doces</a>
+        <a href="/html/carne">Carne</a>
+    </nav>
+    
+    <section class="card-container">
+        <!-- Carnes -->
+        <div class="card">
+            <img src="../images/carne1.jpg" alt="Carne Assada" width="100">
+            <h3>Carne Assada</h3>
+            <p>Preparada lentamente para obter o sabor perfeito.</p>
+        </div>
+        <div class="card">
+            <img src="../images/carne2.jpg" alt="Churrasco" width="100">
+            <h3>Churrasco</h3>
+            <p>Tradicional brasileiro, com cortes selecionados e tempero especial.</p>
+        </div>
+        <div class="card">
+            <img src="../images/carne3.jpg" alt="Bife à Milanesa" width="100">
+            <h3>Bife à Milanesa</h3>
+            <p>Empanado crocante, servido com arroz e feijão.</p>
+        </div>
+        <div class="card">
+            <img src="../images/carne4.jpg" alt="Costela no Bafo" width="100">
+            <h3>Costela no Bafo</h3>
+            <p>Carne suculenta cozida lentamente para derreter na boca.</p>
+        </div>
+        <div class="card">
+            <img src="../images/carne5.jpg" alt="Alcatra ao Alho" width="100">
+            <h3>Alcatra ao Alho</h3>
+            <p>Alcatra macia com tempero especial de alho e ervas.</p>
+        </div>
+    
+        <!-- Doces -->
+        <div class="card">
+            <img src="../images/doce1.jpg" alt="Brigadeiro" width="100">
+            <h3>Brigadeiro</h3>
+            <p>Docinho de chocolate, clássico nas festas brasileiras.</p>
+        </div>
+        <div class="card">
+            <img src="../images/doce2.jpg" alt="Pudim" width="100">
+            <h3>Pudim</h3>
+            <p>Delicioso e cremoso pudim de leite condensado.</p>
+        </div>
+        <div class="card">
+            <img src="../images/doce3.jpg" alt="Bolo de Cenoura" width="100">
+            <h3>Bolo de Cenoura</h3>
+            <p>Cobertura de chocolate e massa fofinha.</p>
+        </div>
+        <div class="card">
+            <img src="../images/doce4.jpg" alt="Beijinho" width="100">
+            <h3>Beijinho</h3>
+            <p>Bolinhas de coco cobertas com açúcar cristal.</p>
+        </div>
+        <div class="card">
+            <img src="../images/doce5.jpg" alt="Torta de Limão" width="100">
+            <h3>Torta de Limão</h3>
+            <p>Refrescante e doce na medida certa.</p>
+        </div>
+    
+        <!-- Massas -->
+        <div class="card">
+            <img src="../images/massa1.jpg" alt="Espaguete à Bolonhesa" width="100">
+            <h3>Espaguete à Bolonhesa</h3>
+            <p>Molho de carne e tomate, perfeito para o jantar.</p>
+        </div>
+        <div class="card">
+            <img src="../images/massa2.jpg" alt="Lasanha" width="100">
+            <h3>Lasanha</h3>
+            <p>Camadas de massa, queijo e molho.</p>
+        </div>
+        <div class="card">
+            <img src="../images/massa3.jpg" alt="Carbonara" width="100">
+            <h3>Carbonara</h3>
+            <p>Creme com bacon e parmesão.</p>
+        </div>
+        <div class="card">
+            <img src="../images/massa4.jpg" alt="Nhoque de Batata" width="100">
+            <h3>Nhoque de Batata</h3>
+            <p>Massa leve feita com batatas frescas.</p>
+        </div>
+        
+        <div class="card">
+            <img src="../images/massa6.jpg" alt="Ravioli de Ricota" width="100">
+            <h3>Ravioli de Ricota</h3>
+            <p>Massa recheada com ricota e ervas frescas.</p>
+        </div>
+        
+        <div class="card">
+            <img src="../images/massa8.jpg" alt="Spaghetti Cacio e Pepe" width="100">
+            <h3>Spaghetti Cacio e Pepe</h3>
+            <p>Simples e delicioso, com queijo e pimenta.</p>
+        </div>
+        
+        <div class="card">
+            <img src="../images/massa10.jpg" alt="Macarrão Alho e Óleo" width="100" height="100">
+            <h3>Macarrão Alho e Óleo</h3>
+            <p>Simples, saboroso e rápido de preparar.</p>
+        </div>
+    </section>
+    
+    <div style="text-align: center">
+        <h1>Buscar</h1>
+        <input type="text" id="busca">
+        <br/>
+        <button id="btnBuscar">Buscar</button>
+        <br/>
+    </div>
+
+
+    <div style="text-align: center">
+        <br/>
+        <input type="text" id="nome">
+        <input type="number" id="idade">
+
+        <button id="btnSalvar">Salvar</button>
+        <button id="btnListar">Listar</button>
+    </div>
+    <div>
+        <output type="text" id="output">
+            
+        </output>
+    </div>
+    <div id="resultContainer" class="card-container"></div>
+
+
+
+    <footer class="rodape">
+        <p>Meu footer</p>
+    </footer>
+
+    
+</body>
+
+</html>
